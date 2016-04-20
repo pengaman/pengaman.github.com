@@ -1,24 +1,23 @@
-<div id="main" class="<%= item.layout %>" itemscope itemprop="blogPost">
-  <% if (page.layout=='photo' && item.photos && item.photos.length){ %>
-    <%- partial('gallery') %>
-  <% } %>
+<div id="main" class="post" itemscope itemprop="blogPost">
+  {% if page.type == 'photo' and item.photos and item.photos | size != 0 %}
+	{% include _partial/post/gallery.html %}
+  {% endif %}
 	<article itemprop="articleBody"> 
-		<%- partial('header') %>
+	{% include _partial/post/header.html %}
 	<div class="article-content">
-		<% if( table&&(item.toc !== false) && theme.toc.article){ %>
-		<div id="toc" class="toc-article">
-			<strong class="toc-title"><%= __('contents') %></strong>
-		<% if(item.list_number == false) {%>
-		<%- toc(item.content,{list_number:false}) %>
-		<% }else{ %>
-			<%- toc(item.content) %>
-		<% } %>
+		{% if table and site.toc.article %}
+		<div id="toc" class="toc-article toc-content">
+		{% if item.list_number == false %}
+		{%- toc(item.content,{list_number:false}) %}
+		{% else %}
+			{%- toc(item.content) %}
+		{% endif %}
 		</div>
-		<% } %>
-		<%- item.content %>  
+		{% endif %}
+		{{ content }}  
 	</div>
-		<%- partial('footer') %>   	       
+	{% include _partial/post/footer.html %}   
 	</article>
-	<%- partial('pagination') %>
-	<%- partial('comment') %>
+	{% include _partial/post/pagination.html %}
+	{% include _partial/post/comment.html %}
 </div>  
