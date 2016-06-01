@@ -23,20 +23,18 @@ baseurl: http://pengaman.github.io
 paginate: 10
 
 # Markdown Processors
-markdown: kramdown 
-kramdown :
+markdown: redcarpet
+redcarpet:
   extensions:
-    input: GFM
-    extensions:
-      - autolink
-      - footnotes
-      - smart
-    use_coderay: true
-    syntax_highlighter: rouge
-    coderay:
-      coderay_line_numbers:  nil
+    - hard_wrap
+    - no_intra_emphasis
+    - autolink
+    - strikethrough
+    - tables
+    - lax_spacing
+    - with_toc_data
 
-tagline: A technology blog for myself.
+tagline: Hello world.
 
 
 ##### Menu
@@ -83,7 +81,7 @@ mathjax: false      #enable mathjax if true
 author:
   name: pengaman      ## e.g. wuchong Author name
   intro_line1:  "Hello ,I'm pengaman in HeBei."    ## your introduction on the bottom of the page
-  intro_line2:  "hello world."  ## the 2nd line
+  intro_line2:  "Hello world."  ## the 2nd line
   weibo: 5111882097      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   tsina: 5111882097     ## e.g. 2176287895  Your weibo ID,It will be used in share button.
   douban:    ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
