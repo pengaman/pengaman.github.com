@@ -1,13 +1,13 @@
 # Site settings
-title: pengaman
-email: 158611371@qq.com
+title: sunxiaobiu技术不宅
+email: sunxiaobiu@gmail.com
 description: Source of me.
 localurl: "" # the subpath of your site, e.g. /blog/
-url: http://pengaman.github.io # the base hostname & protocol for your site
+url: http://sunxiaobiu.github.io # the base hostname & protocol for your site
 me-img: "/img/HeadPicture.png"
 
 twitter_username:
-github_username: pengaman
+github_username: sunxiaobiu
 
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
@@ -16,8 +16,8 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
-assets: http://pengaman.github.io/assets
-baseurl: http://pengaman.github.io
+assets: http://sunxiaobiu.github.io/assets
+baseurl: http://sunxiaobiu.github.io
 
 # pagination
 paginate: 10
@@ -34,7 +34,7 @@ redcarpet:
     - lax_spacing
     - with_toc_data
 
-tagline: Hello world.
+tagline: A technology blog for myself.
 
 
 ##### Menu
@@ -53,12 +53,14 @@ menu:
 widgets:
 - category
 - tag
-
+- links
+- douban
+- rss
 ## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo,douban
 
 
 #### RSS
-rss:  ## RSS address.
+rss: /atom.xml ## RSS address.
 
 #### Image
 imglogo:
@@ -79,36 +81,39 @@ mathjax: false      #enable mathjax if true
 
 #### Author information
 author:
-  name: pengaman      ## e.g. wuchong Author name
-  intro_line1:  "Hello ,I'm pengaman in HeBei."    ## your introduction on the bottom of the page
-  intro_line2:  "Hello world."  ## the 2nd line
-  weibo: 5111882097      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
-  tsina: 5111882097     ## e.g. 2176287895  Your weibo ID,It will be used in share button.
-  douban:    ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
-  zhihu:     ## e.g. jark  for http://www.zhihu.com/people/jark
-  email:     ## e.g. imjark@gmail.com
+  name: sunxiaobiu      ## e.g. wuchong Author name
+  intro_line1:  "Hello ,I'm Sunxiaoyu in Shanghai."    ## your introduction on the bottom of the page
+  intro_line2:  "Too simple, sometimes naive."  ## the 2nd line
+  weibo: 5729765191     ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
+  weibo_verifier: 9d4bc461 ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
+  tsina: 9d4bc461     ## e.g. 2176287895  Your weibo ID,It will be used in share button.
+  douban: 74961542    ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
+  zhihu: sunxiaobiu     ## e.g. jark  for http://www.zhihu.com/people/jark
+  email: sunxiaobiu@gmail.com     ## e.g. imjark@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
-  github: pengaman    ## e.g. wuchong for https://github.com/wuchong
-  facebook:  ## e.g. imjark for https://facebook.com/imjark
+  github: sunxiaobiu    ## e.g. wuchong for https://github.com/wuchong
+  facebook: xiaobiu.sun  ## e.g. imjark for https://facebook.com/imjark
   linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
   google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
-  stackoverflow: ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
+  stackoverflow: 5633124 ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
 ## if you set them, the corresponding  share button will show on the footer
 
 #### Toc
 toc:
-  article: false   ## show contents in article.
-  aside: false     ## show contents in aside.
+  article: true   ## show contents in article.
+  aside: true     ## show contents in aside.
 ## you can set both of the value to true of neither of them.
 ## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
 
 #### Links
 links:
+  tcOops's Blog: http://spacenx.pw/
+
 excerpt_separator: <!--more-->
 
 #### Comment
-duoshuo_shortname: pengaman    ## e.g. wuchong   your duoshuo short name.
-disqus_shortname:    ## e.g. wuchong   your disqus short name.
+duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
+disqus_shortname: sunxiaobiu    ## e.g. wuchong   your disqus short name.
 
 #### Share button
 jiathis:
@@ -124,7 +129,7 @@ google_analytics:
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
-  enable: false
+  enable: true
   sitecode: 7578feb1a00553f099171e7b2560ae78 ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
 cnzz_tongji:
   enable: false
