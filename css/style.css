@@ -140,7 +140,6 @@ input::-moz-focus-inner, button::-moz-focus-inner {
 h1 {
     font-size: 1.5em;
     font-weight: 500 !important;
-    color: #1b7f9e;
 }
 
 .fa {
@@ -2130,7 +2129,7 @@ section.comment {
 
 footer {
     margin-top: 1em;
-    background:#87B8ED;
+    background: #1f1f1f;
     padding: 0 2% .5em
 }
 
