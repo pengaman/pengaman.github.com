@@ -7,7 +7,7 @@ url: http://pengaman.github.io # the base hostname & protocol for your site
 me-img: "/img/HeadPicture.png"
 
 twitter_username:
-github_username: sunxiaobiu
+github_username: pengaman
 
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
@@ -16,7 +16,7 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
-assets: http://sunxiaobiu.github.io/assets
+assets: http://pengaman.github.io/assets
 baseurl: http://pengaman.github.io
 
 # pagination
@@ -53,9 +53,7 @@ menu:
 widgets:
 - category
 - tag
-- links
-- douban
-- rss
+
 ## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo,douban
 
 
