@@ -1,14 +1,17 @@
 ---
 category: program
+date: '2015-09-23'
 layout: post
 published: true
+sha: f230676d74607a1a7d67c9bf9e102c1162b3ae82
+slug: bit-endian-little-endian-bit-field
 tags:
   - cpp
   - c
 title: 位域的大小端问题
+info: 
+comment: 
 categories: []
-time: 2016.02.6 14:22:00
-excerpt: Linux 沿用的对齐策略是，2字节数据类型（例如`short`）的地址是2的倍数，而较大的数据类型（例如`int`、`int*`、`float`和`double`）的地址必须是4的倍数。
 
 ---
 

@@ -5,9 +5,6 @@ title: C++对象模型之复制构造函数
 category: program
 tags: 
   - cpp
-time: 2016.02.4 14:22:00
-excerpt: 如果一个 class 未定义出 copy constructor，编译器就自动为它产生出一个”* 这句话是不对的，当 class 展现 **bitwise copy semanics** 时，编译器才会产生出来。
-
 ---
 
 
