@@ -7,7 +7,7 @@ url: http://pengaman.github.io # the base hostname & protocol for your site
 me-img: "/img/HeadPicture.png"
 
 twitter_username:
-github_username: pengaman
+github_username: sunxiaobiu
 
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
@@ -53,7 +53,9 @@ menu:
 widgets:
 - category
 - tag
-
+- links
+- douban
+- rss
 ## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo,douban
 
 
@@ -89,7 +91,7 @@ author:
   zhihu: sunxiaobiu     ## e.g. jark  for http://www.zhihu.com/people/jark
   email: sunxiaobiu@gmail.com     ## e.g. imjark@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
-  github: sunxiaobiu    ## e.g. wuchong for https://github.com/wuchong
+  github: pengaman    ## e.g. wuchong for https://github.com/wuchong
   facebook: xiaobiu.sun  ## e.g. imjark for https://facebook.com/imjark
   linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
   google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
@@ -111,7 +113,7 @@ excerpt_separator: <!--more-->
 
 #### Comment
 duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
-disqus_shortname: sunxiaobiu    ## e.g. wuchong   your disqus short name.
+disqus_shortname: pengaman    ## e.g. wuchong   your disqus short name.
 
 #### Share button
 jiathis:
